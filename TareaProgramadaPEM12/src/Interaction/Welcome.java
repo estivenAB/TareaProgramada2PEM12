@@ -61,9 +61,19 @@ public class Welcome extends javax.swing.JFrame {
 
         btEnter.setFont(new java.awt.Font("Algerian", 0, 18)); // NOI18N
         btEnter.setText("Ingresar");
+        btEnter.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btEnterActionPerformed(evt);
+            }
+        });
 
         btRegister.setFont(new java.awt.Font("Algerian", 0, 18)); // NOI18N
         btRegister.setText("Ingresar");
+        btRegister.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btRegisterActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -122,6 +132,14 @@ public class Welcome extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btEnterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btEnterActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btEnterActionPerformed
+
+    private void btRegisterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btRegisterActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btRegisterActionPerformed
 
     /**
      * @param args the command line arguments
