@@ -30,32 +30,32 @@ public class SelectLevels extends javax.swing.JFrame {
         buttonGroup1 = new javax.swing.ButtonGroup();
         buttonGroup2 = new javax.swing.ButtonGroup();
         buttonGroup3 = new javax.swing.ButtonGroup();
-        jLabel1 = new javax.swing.JLabel();
-        jCheckBox1 = new javax.swing.JCheckBox();
-        jCheckBox2 = new javax.swing.JCheckBox();
-        jCheckBox3 = new javax.swing.JCheckBox();
-        jCheckBox4 = new javax.swing.JCheckBox();
-        jButton1 = new javax.swing.JButton();
+        lbSelectLevel = new javax.swing.JLabel();
+        cbSelectEasy = new javax.swing.JCheckBox();
+        cbSelectMedium = new javax.swing.JCheckBox();
+        cbSelectHard = new javax.swing.JCheckBox();
+        cbSelectTooHard = new javax.swing.JCheckBox();
+        btNext = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setFont(new java.awt.Font("Algerian", 0, 18)); // NOI18N
-        jLabel1.setText("Seleccione el nivel de dificultad:");
+        lbSelectLevel.setFont(new java.awt.Font("Algerian", 0, 18)); // NOI18N
+        lbSelectLevel.setText("Seleccione el nivel de dificultad:");
 
-        jCheckBox1.setText("FÁCIL: palabras entre 2 - 6 caracteres. Entre 5 - 9 palabras.");
+        cbSelectEasy.setText("FÁCIL: palabras entre 2 - 6 caracteres. Entre 5 - 9 palabras.");
 
-        jCheckBox2.setText("MEDIO: palabras entre 3 - 7 caracteres. Entre 10 - 14 palabras ");
-        jCheckBox2.addActionListener(new java.awt.event.ActionListener() {
+        cbSelectMedium.setText("MEDIO: palabras entre 3 - 7 caracteres. Entre 10 - 14 palabras ");
+        cbSelectMedium.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jCheckBox2ActionPerformed(evt);
+                cbSelectMediumActionPerformed(evt);
             }
         });
 
-        jCheckBox3.setText("DIFÍCIL: palabras entre 4 - 8 caracteres. Entre 15 - 19 palabras.");
+        cbSelectHard.setText("DIFÍCIL: palabras entre 4 - 8 caracteres. Entre 15 - 19 palabras.");
 
-        jCheckBox4.setText("MUY DIFÍCIL: palabras entre 5 - 10 caracteres. Entre 20 - 25 palabras.");
+        cbSelectTooHard.setText("MUY DIFÍCIL: palabras entre 5 - 10 caracteres. Entre 20 - 25 palabras.");
 
-        jButton1.setText("Siguiente");
+        btNext.setText("Siguiente");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -64,41 +64,41 @@ public class SelectLevels extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jCheckBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 317, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jCheckBox4)
-                    .addComponent(jLabel1)
-                    .addComponent(jCheckBox3)
-                    .addComponent(jCheckBox2))
+                    .addComponent(cbSelectEasy, javax.swing.GroupLayout.PREFERRED_SIZE, 317, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cbSelectTooHard)
+                    .addComponent(lbSelectLevel)
+                    .addComponent(cbSelectHard)
+                    .addComponent(cbSelectMedium))
                 .addContainerGap(23, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton1)
+                .addComponent(btNext)
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1)
+                .addComponent(lbSelectLevel)
                 .addGap(18, 18, 18)
-                .addComponent(jCheckBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(cbSelectEasy, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jCheckBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(cbSelectMedium, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jCheckBox3, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(cbSelectHard, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jCheckBox4, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(cbSelectTooHard, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE)
-                .addComponent(jButton1)
+                .addComponent(btNext)
                 .addGap(26, 26, 26))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jCheckBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox2ActionPerformed
+    private void cbSelectMediumActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbSelectMediumActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jCheckBox2ActionPerformed
+    }//GEN-LAST:event_cbSelectMediumActionPerformed
 
     /**
      * @param args the command line arguments
@@ -136,14 +136,14 @@ public class SelectLevels extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btNext;
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.ButtonGroup buttonGroup2;
     private javax.swing.ButtonGroup buttonGroup3;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JCheckBox jCheckBox1;
-    private javax.swing.JCheckBox jCheckBox2;
-    private javax.swing.JCheckBox jCheckBox3;
-    private javax.swing.JCheckBox jCheckBox4;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JCheckBox cbSelectEasy;
+    private javax.swing.JCheckBox cbSelectHard;
+    private javax.swing.JCheckBox cbSelectMedium;
+    private javax.swing.JCheckBox cbSelectTooHard;
+    private javax.swing.JLabel lbSelectLevel;
     // End of variables declaration//GEN-END:variables
 }
